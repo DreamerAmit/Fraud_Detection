@@ -1,0 +1,786 @@
+2025-03-22 15:21:45,702 - INFO - Extracted text from PDF 'wordpress-pdf-invoice-plugin-sample.pdf':
+2025-03-22 15:21:45,704 - INFO - ==================================================
+2025-03-22 15:21:45,705 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-22 15:21:45,748 - INFO - ==================================================
+2025-03-22 15:21:45,749 - INFO - Sending request to OpenAI
+2025-03-22 15:21:45,749 - ERROR - Error processing invoice: Client.__init__() got an unexpected keyword argument 'proxies'
+Traceback (most recent call last):
+  File "C:\Amit Mahajan\Projects\Fraud_Detection\backend\main.py", line 75, in analyze_invoice
+    response = openai.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Amit Mahajan\Projects\Fraud_Detection\backend\venv\Lib\site-packages\openai\_utils\_proxy.py", line 22, in __getattr__
+    return getattr(self.__get_proxied__(), attr)
+                   ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Amit Mahajan\Projects\Fraud_Detection\backend\venv\Lib\site-packages\openai\_utils\_proxy.py", line 43, in __get_proxied__
+    return self.__load__()
+           ~~~~~~~~~~~~~^^
+  File "C:\Amit Mahajan\Projects\Fraud_Detection\backend\venv\Lib\site-packages\openai\_module_client.py", line 12, in __load__
+    return _load_client().chat
+           ~~~~~~~~~~~~^^
+  File "C:\Amit Mahajan\Projects\Fraud_Detection\backend\venv\Lib\site-packages\openai\__init__.py", line 312, in _load_client
+    _client = _ModuleClient(
+        api_key=api_key,
+    ...<6 lines>...
+        http_client=http_client,
+    )
+  File "C:\Amit Mahajan\Projects\Fraud_Detection\backend\venv\Lib\site-packages\openai\_client.py", line 107, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        version=__version__,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        _strict_response_validation=_strict_response_validation,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Amit Mahajan\Projects\Fraud_Detection\backend\venv\Lib\site-packages\openai\_base_client.py", line 746, in __init__
+    self._client = http_client or httpx.Client(
+                                  ~~~~~~~~~~~~^
+        base_url=base_url,
+        ^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        limits=limits,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-03-22 15:32:14,228 - INFO - Extracted text from PDF 'wordpress-pdf-invoice-plugin-sample.pdf':
+2025-03-22 15:32:14,229 - INFO - ==================================================
+2025-03-22 15:32:14,230 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-22 15:32:14,231 - INFO - ==================================================
+2025-03-22 15:32:14,232 - INFO - Sending request to OpenAI
+2025-03-22 15:32:15,550 - INFO - Received response from OpenAI:
+2025-03-22 15:32:15,551 - INFO - ==================================================
+2025-03-22 15:32:15,551 - ERROR - Error processing invoice: 'choices'
+Traceback (most recent call last):
+  File "C:\Amit Mahajan\Projects\Fraud_Detection\backend\main.py", line 91, in analyze_invoice
+    logger.info(response_json['choices'][0]['text'])
+                ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'choices'
+2025-03-22 15:34:56,806 - INFO - Extracted text from PDF 'wordpress-pdf-invoice-plugin-sample.pdf':
+2025-03-22 15:34:56,806 - INFO - ==================================================
+2025-03-22 15:34:56,807 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-22 15:34:56,807 - INFO - ==================================================
+2025-03-22 15:34:56,807 - INFO - Sending request to OpenAI
+2025-03-22 15:35:06,765 - INFO - Full OpenAI Response:
+2025-03-22 15:35:06,765 - INFO - {'id': 'chatcmpl-BDq0qLE45DvahCweoJ35mMP3rfG5G', 'object': 'chat.completion', 'created': 1742637900, 'model': 'gpt-4o-mini-2024-07-18', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Here is the analysis of the invoice text based on the specified aspects:\n\n### Green Points (Correct)\n1. **Company details consistency**:  \n   - Business name and contact information (DEMO - Sliced Invoices, email) is consistent multiple times.  \n   - **Result**: Green\n\n2. **Invoice number format**:  \n   - The invoice number follows a standard format (INV-3337), which is common for invoices.  \n   - **Result**: Green\n\n3. **Date validity**:  \n   - The invoice date (January 25, 2016) and the due date (January 31, 2016) are logical (the due date is after the invoice date).  \n   - **Result**: Green\n\n4. **Price calculations**:  \n   - The subtotal of services ($85.00) correctly matches the hours/quantity multiplied by the rate/price. The total due is also correctly calculated as $93.50.  \n   - **Result**: Green\n\n5. **Tax calculations**:  \n   - The tax ($8.50) corresponds to 10% of the subtotal ($85.00), which is a typical tax rate.  \n   - **Result**: Green\n\n6. **Payment details**:  \n   - Provided bank account details (ACC # and BSB #) are present, showing payment instructions.  \n   - **Result**: Green\n\n7. **Overall layout and formatting**:  \n   - The invoice has a clean layout with distinct sections for items and totals, consistent spacing, and alignment.  \n   - **Result**: Green\n\n### Red Points (Suspicious)\n- **None**: All aspects have been categorized as correct. \n\n### Summary\n- **Green Points**: 7\n- **Red Points**: 0 \n\n### Final Result\n- **Green Points**: All aspects assessed are correct, indicating that the invoice appears legitimate and free from signs of fraud.  \n- **Red Points**: None, showing no suspicious elements detected in the invoice.', 'refusal': None, 'annotations': []}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 334, 'completion_tokens': 425, 'total_tokens': 759, 'prompt_tokens_details': {'cached_tokens': 0, 'audio_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 0, 'audio_tokens': 0, 'accepted_prediction_tokens': 0, 'rejected_prediction_tokens': 0}}, 'service_tier': 'default', 'system_fingerprint': 'fp_b8bc95a0ac'}
+2025-03-22 15:35:06,767 - INFO - Received response from OpenAI:
+2025-03-22 15:35:06,767 - INFO - ==================================================
+2025-03-22 15:35:06,767 - INFO - Here is the analysis of the invoice text based on the specified aspects:
+
+### Green Points (Correct)
+1. **Company details consistency**:  
+   - Business name and contact information (DEMO - Sliced Invoices, email) is consistent multiple times.  
+   - **Result**: Green
+
+2. **Invoice number format**:  
+   - The invoice number follows a standard format (INV-3337), which is common for invoices.  
+   - **Result**: Green
+
+3. **Date validity**:  
+   - The invoice date (January 25, 2016) and the due date (January 31, 2016) are logical (the due date is after the invoice date).  
+   - **Result**: Green
+
+4. **Price calculations**:  
+   - The subtotal of services ($85.00) correctly matches the hours/quantity multiplied by the rate/price. The total due is also correctly calculated as $93.50.  
+   - **Result**: Green
+
+5. **Tax calculations**:  
+   - The tax ($8.50) corresponds to 10% of the subtotal ($85.00), which is a typical tax rate.  
+   - **Result**: Green
+
+6. **Payment details**:  
+   - Provided bank account details (ACC # and BSB #) are present, showing payment instructions.  
+   - **Result**: Green
+
+7. **Overall layout and formatting**:  
+   - The invoice has a clean layout with distinct sections for items and totals, consistent spacing, and alignment.  
+   - **Result**: Green
+
+### Red Points (Suspicious)
+- **None**: All aspects have been categorized as correct. 
+
+### Summary
+- **Green Points**: 7
+- **Red Points**: 0 
+
+### Final Result
+- **Green Points**: All aspects assessed are correct, indicating that the invoice appears legitimate and free from signs of fraud.  
+- **Red Points**: None, showing no suspicious elements detected in the invoice.
+2025-03-22 15:35:06,768 - INFO - ==================================================
+2025-03-22 15:35:06,768 - INFO - Analysis result for 'wordpress-pdf-invoice-plugin-sample.pdf':
+2025-03-22 15:35:06,768 - INFO - Status: fake
+2025-03-22 15:35:06,769 - INFO - Green points: 5
+2025-03-22 15:35:06,769 - INFO - Red points: 2
+2025-03-22 15:40:09,756 - INFO - Extracted text from PDF 'wordpress-pdf-invoice-plugin-sample.pdf':
+2025-03-22 15:40:09,757 - INFO - ==================================================
+2025-03-22 15:40:09,757 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-22 15:40:09,757 - INFO - ==================================================
+2025-03-22 15:40:09,758 - INFO - Sending request to OpenAI
+2025-03-22 15:40:11,714 - INFO - Received response from OpenAI:
+2025-03-22 15:40:11,715 - INFO - ==================================================
+2025-03-22 15:40:11,715 - INFO - 1. Extracted Information:
+Company Name: DEMO - Sliced Invoices
+Address: Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345
+
+2. Verification Result:
+The company name follows a standard format with a business name followed by a descriptor. The address is in the format of a suite number, street address, city, and ZIP code. However, the address "Your City, AZ 12345" seems suspicious as it is a placeholder text. Therefore, this does not appear to be a legitimate business address.
+2025-03-22 15:40:11,716 - INFO - ==================================================
+2025-03-22 15:40:11,716 - INFO - Analysis result for 'wordpress-pdf-invoice-plugin-sample.pdf':
+2025-03-22 15:40:11,717 - INFO - Status: real
+2025-03-22 15:40:11,718 - INFO - Green points: 1
+2025-03-22 15:40:11,718 - INFO - Red points: 0
+2025-03-22 15:44:13,154 - INFO - Extracted text from PDF 'wordpress-pdf-invoice-plugin-sample.pdf':
+2025-03-22 15:44:13,155 - INFO - ==================================================
+2025-03-22 15:44:13,156 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-22 15:44:13,156 - INFO - ==================================================
+2025-03-22 15:44:13,156 - INFO - Sending request to OpenAI
+2025-03-22 15:44:16,551 - INFO - Received response from OpenAI:
+2025-03-22 15:44:16,553 - INFO - ==================================================
+2025-03-22 15:44:16,553 - INFO - 1. Extracted Information:
+Company Name: DEMO - Sliced Invoices
+Address: Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345
+
+2. Verification Result:
+Based on the extracted information, the company name and address format appear valid. However, the address format of "Your City AZ 12345" seems unusual and non-specific. The lack of a known business location pattern in the address raises a red flag in terms of legitimacy. Further verification would be needed to confirm if this is a real and verifiable business address.
+2025-03-22 15:44:16,554 - INFO - ==================================================
+2025-03-22 15:44:16,554 - INFO - Analysis result for 'wordpress-pdf-invoice-plugin-sample.pdf':
+2025-03-22 15:44:16,554 - INFO - Status: fake
+2025-03-22 15:44:16,555 - INFO - Green points: 1
+2025-03-22 15:44:16,555 - INFO - Red points: 0
+2025-03-22 15:47:17,333 - INFO - Extracted text from PDF 'wordpress-pdf-invoice-plugin-sample.pdf':
+2025-03-22 15:47:17,335 - INFO - ==================================================
+2025-03-22 15:47:17,336 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-22 15:47:17,336 - INFO - ==================================================
+2025-03-22 15:47:17,337 - INFO - Sending request to OpenAI
+2025-03-22 15:47:20,051 - INFO - Received response from OpenAI:
+2025-03-22 15:47:20,052 - INFO - ==================================================
+2025-03-22 15:47:20,052 - INFO - 1. Extracted Company: DEMO - Sliced Invoices
+2. Extracted Address: Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345
+3. Verification:
+   - Is it a known company? (No)
+   - Does the address format look valid? (Yes)
+   - For well-known companies: Does it match known locations? (Not Applicable)
+4. Confidence Level: Medium
+5. Reasoning: The company name "DEMO - Sliced Invoices" does not appear to be a known or legitimate company based on common knowledge. However, the address format seems valid with a specific suite number and street address in Your City, AZ. This raises some doubts about the legitimacy of the company as it uses a generic placeholder city name.
+2025-03-22 15:47:20,053 - INFO - ==================================================
+2025-03-22 15:47:20,053 - INFO - Analysis result for 'wordpress-pdf-invoice-plugin-sample.pdf':
+2025-03-22 15:47:20,053 - INFO - Status: fake
+2025-03-22 15:47:20,054 - INFO - Green points: 2
+2025-03-22 15:47:20,054 - INFO - Red points: 2
+2025-03-22 15:55:12,701 - INFO - Extracted text from PDF 'wordpress-pdf-invoice-plugin-sample.pdf':
+2025-03-22 15:55:12,702 - INFO - ==================================================
+2025-03-22 15:55:12,705 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-22 15:55:12,706 - INFO - ==================================================
+2025-03-22 15:55:12,706 - INFO - Sending request to OpenAI
+2025-03-22 15:55:17,031 - INFO - Received response from OpenAI:
+2025-03-22 15:55:17,031 - INFO - ==================================================
+2025-03-22 15:55:17,032 - INFO - 1. Extracted Company: DEMO - Sliced Invoices
+2. Extracted Address: Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345
+3. Verification:
+   - Is it a known company? No
+   - Does the address format look valid? Yes
+   - For well-known companies: N/A
+4. Confidence Level: Medium
+5. Reasoning: The company name and address appear to be valid but are generic placeholders used in the context of a demo invoice. The address format follows the typical structure of a business address. The company does not seem to be a well-known entity, as "DEMO" suggests that this is a sample or demonstration purpose company.
+2025-03-22 15:55:17,032 - INFO - ==================================================
+2025-03-22 15:55:17,032 - INFO - Analysis result for 'wordpress-pdf-invoice-plugin-sample.pdf':
+2025-03-22 15:55:17,032 - INFO - Status: real
+2025-03-22 15:55:17,033 - INFO - Green points: 2
+2025-03-22 15:55:17,033 - INFO - Red points: 0
+2025-03-22 15:55:53,630 - INFO - Extracted text from PDF 'wordpress-pdf-invoice-plugin-sample.pdf':
+2025-03-22 15:55:53,632 - INFO - ==================================================
+2025-03-22 15:55:53,632 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-22 15:55:53,633 - INFO - ==================================================
+2025-03-22 15:55:53,634 - INFO - Sending request to OpenAI
+2025-03-22 15:55:55,922 - INFO - Received response from OpenAI:
+2025-03-22 15:55:55,923 - INFO - ==================================================
+2025-03-22 15:55:55,923 - INFO - 1. Extracted Company: DEMO - Sliced Invoices
+2. Extracted Address: Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345
+3. Verification:
+   - Is it a known company? No
+   - Does the address format look valid? Yes
+   - For well-known companies: Not Applicable
+4. Confidence Level: Medium
+5. Reasoning: The company name and address seem valid, but the company itself is labeled as a demo in the text, indicating it may not be a real, known company. However, the address format appears legitimate.
+2025-03-22 15:55:55,924 - INFO - ==================================================
+2025-03-22 15:55:55,924 - INFO - Analysis result for 'wordpress-pdf-invoice-plugin-sample.pdf':
+2025-03-22 15:55:55,925 - INFO - Status: fake
+2025-03-22 15:55:55,926 - INFO - Green points: 2
+2025-03-22 15:55:55,926 - INFO - Red points: 2
+2025-03-22 15:58:07,895 - INFO - Extracted text from PDF 'wordpress-pdf-invoice-plugin-sample.pdf':
+2025-03-22 15:58:07,896 - INFO - ==================================================
+2025-03-22 15:58:07,896 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-22 15:58:07,897 - INFO - ==================================================
+2025-03-22 15:58:07,897 - INFO - Sending request to OpenAI
+2025-03-22 15:58:10,090 - INFO - Received response from OpenAI:
+2025-03-22 15:58:10,091 - INFO - ==================================================
+2025-03-22 15:58:10,091 - INFO - 1. Extracted Company: DEMO - Sliced Invoices
+2. Extracted Address: Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345
+3. Verification:
+   - Is it a known company? (No)
+   - Does the address format look valid? (Yes)
+   - For well-known companies: Does it match known locations? (N/A)
+4. Confidence Level: Medium
+5. Reasoning: The company name "DEMO - Sliced Invoices" does not appear to be a known or legitimate company. However, the address format seems valid with a suite number, street address, city, and zip code. The lack of recognition of the company name lowers the confidence level in its legitimacy.
+2025-03-22 15:58:10,092 - INFO - ==================================================
+2025-03-22 15:58:10,093 - INFO - Analysis result for 'wordpress-pdf-invoice-plugin-sample.pdf':
+2025-03-22 15:58:10,094 - INFO - Status: fake
+2025-03-22 15:58:10,095 - INFO - Green points: 0
+2025-03-22 15:58:10,095 - INFO - Red points: 4
+2025-03-22 15:59:00,433 - ERROR - Error processing invoice: EOF marker not found
+Traceback (most recent call last):
+  File "C:\Amit Mahajan\Projects\Fraud_Detection\backend\main.py", line 41, in analyze_invoice
+    pdf_reader = PyPDF2.PdfReader(pdf_file)
+  File "C:\Amit Mahajan\Projects\Fraud_Detection\backend\venv\Lib\site-packages\PyPDF2\_reader.py", line 319, in __init__
+    self.read(stream)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Amit Mahajan\Projects\Fraud_Detection\backend\venv\Lib\site-packages\PyPDF2\_reader.py", line 1415, in read
+    self._find_eof_marker(stream)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Amit Mahajan\Projects\Fraud_Detection\backend\venv\Lib\site-packages\PyPDF2\_reader.py", line 1471, in _find_eof_marker
+    raise PdfReadError("EOF marker not found")
+PyPDF2.errors.PdfReadError: EOF marker not found
+2025-03-22 16:05:55,134 - INFO - Extracted text from PDF 'Invoice-Template.pdf':
+2025-03-22 16:05:55,135 - INFO - ==================================================
+2025-03-22 16:05:55,135 - INFO - Tax invoice 
+Bill To 
+Due Date 
+Customer GSTN 
+ID Description  Rate Amount  
+  Payment Details  Sub total 
+Discoun t 
+Tax Rate  
+Tax 
+Shipping  
+Previous dues  
+Total  Customer name
+Customer address
+Customer phoneInvoice Date 
+Account name: 
+Account number: 
+Bank name : 
+IFSC code : Invoice number
+Bill date
+GST number
+Quantity HSN code
+Billing and invoicing made simple! www.swipez.in/billing-software
+2025-03-22 16:05:55,136 - INFO - ==================================================
+2025-03-22 16:05:55,136 - INFO - Sending request to OpenAI
+2025-03-22 16:05:57,442 - INFO - Received response from OpenAI:
+2025-03-22 16:05:57,443 - INFO - ==================================================
+2025-03-22 16:05:57,443 - INFO - 1. Extracted Company: Swipez
+2. Extracted Address: Not provided in the invoice text
+3. Verification:
+   - Is it a known company? Yes
+   - Does the address format look valid? Not Applicable
+   - For well-known companies: Does it match known locations? Not Applicable
+4. Confidence Level: Medium
+5. Reasoning: Swipez is a known company in the billing and invoicing software industry. The invoice text itself does not provide an address, so further verification would be needed to confirm the legitimacy of the company and its location pattern.
+2025-03-22 16:05:57,444 - INFO - ==================================================
+2025-03-22 16:05:57,444 - INFO - Analysis result for 'Invoice-Template.pdf':
+2025-03-22 16:05:57,444 - INFO - Status: real
+2025-03-22 16:05:57,444 - INFO - Green points: 1
+2025-03-22 16:05:57,445 - INFO - Red points: 0
+2025-03-22 16:07:00,052 - INFO - Extracted text from PDF 'sample-invoice.pdf':
+2025-03-22 16:07:00,052 - INFO - ==================================================
+2025-03-22 16:07:00,053 - INFO - CPB Software (Germany) GmbH - Im Bruch 3 - 63897 Miltenberg/Main
+Musterkunde AG
+Mr. John Doe
+Musterstr. 23
+12345 Musterstadt Name:  Stefanie Müller
+Phone: +49 9371 9786-0
+Invoice WMACCESS Internet
+VAT No. DE199378386
+Invoice No
+123100401
+Amount
+-without VAT-quantity
+130,00 € 1
+10,00 € 0
+50,00 € 0
+1.000,00 € 0
+10,00 € 0
+0,58 € 14
+0,70 € 0
+1,50 € 162
+0,50 € 0
+0,80 € 0
+1,80 € 0
+0,30 € 0
+0,30 € 0
+0,40 € 0
+0,40 € 0
+0,30 € 0
+0,30 € 0
+Terms of Payment: Immediate payment without discount. Any bank charges must be paid by the invoice recipient.
+Bank fees at our expense will be charged to the invoice recipient!
+Please credit the amount invoiced to IBAN DE29 1234 5678 9012 3456 78 | BIC GENODE51MIC (SEPA Credit Transfer)
+This invoice is generated automatically and will not be signedTransaction Fee T6 0,00 €130,00 €
+Basis fee for additional user accounts 0,00 €
+0,00 €
+0,00 €Basic Fee wmPos
+Change of user accounts
+Transaction Fee T101.02.2024 - 29.02.2024
+Transaction Fee G6 0,00 €0,00 €
+VAT 19 % 72,41 €Transaction Fee G3 0,00 €
+Transaction Fee G5 0,00 €Transaction Fee G1 0,00 €
+Transaction Fee G4Transaction Fee G2
+0,00 €Date
+1. März 2024Customer No
+12345Invoice Period
+0,00 €
+Transaction Fee T5 0,00 €243,00 €8,12 €
+Transaction Fee T2 0,00 €
+Transaction Fee T3
+Gross Amount incl. VAT 453,53 €Total 381,12 €Service Description Total Amount
+Basic Fee wmView
+Basic Fee wmGuide
+0,00 €
+Transaction Fee T4
+Request sections: T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Amount in Euro: 0,58 0,70 1,50 0,50 0,80 1,80 0,30 0,30 0,40 0,40 0,30 0,30
+user-account-1 10 0 99 0 0 0 0 0 0 0 0 0 154,30 €
+user-account-2 4 0 63 0 0 0 0 0 0 0 0 0 96,82 €
+Transaction Fee Seg T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Queries in Total: 14 0 162 0 0 0 0 0 0 0 0 0
+Total in Euro: 8,12 € 0,00 € 243,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 251,12 €Invoice Details
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+The explanation of the query fee categories (T1 to T6 and G1 to G6) can be found on our website:
+https://www.wmaccess.com/abfragekategorien
+T1: T2: T3: T4: T5: T6:
+4 0 9 0 0 0
+0 0 12 0 0 0
+0 0 4 0 0 0
+5 0 36 0 0 0
+0 0 19 0 0 0
+1 0 7 0 0 0
+2 0 6 0 0 0
+0 0 11 0 0 0
+0 0 15 0 0 0
+0 0 5 0 0 0
+1 0 23 0 0 0
+1 0 4 0 0 0
+0 0 11 0 0 0
+0,58 0,70 1,50 0,50 0,80 1,8016,50 €Kpi/22695 10,16 €GS 32090 11,08 €18,00 €
+28,50 €CRS/28432
+16,50 €WPN:24791 6,58 €Ttrb/17885 35,08 €SF-M 596/99-08 7,50 €22,50 €Invoice Details for wmView Query Reference
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+wmview, wmProfile and User Profiles Query Segments:
+56,90 €CCL/371515,82 €
+6,00 €AZR/31/27439
+Price for each Query in Euro:Query Reference:
+*Not specified*
+Wwt/15658PG 7772Cs/52113
+Rjn/11138
+
+2025-03-22 16:07:00,054 - INFO - ==================================================
+2025-03-22 16:07:00,054 - INFO - Sending request to OpenAI
+2025-03-22 16:07:01,904 - INFO - Received response from OpenAI:
+2025-03-22 16:07:01,905 - INFO - ==================================================
+2025-03-22 16:07:01,906 - INFO - 1. Extracted Company: CPB Software (Germany) GmbH
+2. Extracted Address: Im Bruch 3, 63897 Miltenberg/Main
+3. Verification:
+   - Is it a known company? Yes
+   - Does the address format look valid? Yes
+   - For well-known companies: Does it match known locations? Not Applicable
+4. Confidence Level: High
+5. Reasoning: The company name and address match the format typically seen in legitimate invoices. CPB Software (Germany) GmbH is a known company specializing in software services. The address provided appears to be a valid business location in Germany.
+2025-03-22 16:07:01,949 - INFO - ==================================================
+2025-03-22 16:07:01,949 - INFO - Analysis result for 'sample-invoice.pdf':
+2025-03-22 16:07:01,950 - INFO - Status: real
+2025-03-22 16:07:01,950 - INFO - Green points: 1
+2025-03-22 16:07:01,951 - INFO - Red points: 0
+2025-03-22 16:07:33,412 - INFO - Extracted text from PDF 'Valid Invoice.pdf':
+2025-03-22 16:07:33,412 - INFO - ==================================================
+2025-03-22 16:07:33,413 - INFO - CPB Software (Germany) GmbH - Im Bruch 3 - 63897 Miltenberg/Main
+Musterkunde AG
+Mr. John Doe
+Musterstr. 23
+12345 Musterstadt Name:  Stefanie Müller
+Phone: +49 9371 9786-0
+Invoice WMACCESS Internet
+VAT No. DE199378386
+Invoice No
+123100401
+Amount
+-without VAT-quantity
+130,00 € 1
+10,00 € 0
+50,00 € 0
+1.000,00 € 0
+10,00 € 0
+0,58 € 14
+0,70 € 0
+1,50 € 162
+0,50 € 0
+0,80 € 0
+1,80 € 0
+0,30 € 0
+0,30 € 0
+0,40 € 0
+0,40 € 0
+0,30 € 0
+0,30 € 0
+Terms of Payment: Immediate payment without discount. Any bank charges must be paid by the invoice recipient.
+Bank fees at our expense will be charged to the invoice recipient!
+Please credit the amount invoiced to IBAN DE29 1234 5678 9012 3456 78 | BIC GENODE51MIC (SEPA Credit Transfer)
+This invoice is generated automatically and will not be signedTransaction Fee T6 0,00 €130,00 €
+Basis fee for additional user accounts 0,00 €
+0,00 €
+0,00 €Basic Fee wmPos
+Change of user accounts
+Transaction Fee T101.02.2024 - 29.02.2024
+Transaction Fee G6 0,00 €0,00 €
+VAT 19 % 72,41 €Transaction Fee G3 0,00 €
+Transaction Fee G5 0,00 €Transaction Fee G1 0,00 €
+Transaction Fee G4Transaction Fee G2
+0,00 €Date
+1. März 2024Customer No
+12345Invoice Period
+0,00 €
+Transaction Fee T5 0,00 €243,00 €8,12 €
+Transaction Fee T2 0,00 €
+Transaction Fee T3
+Gross Amount incl. VAT 453,53 €Total 381,12 €Service Description Total Amount
+Basic Fee wmView
+Basic Fee wmGuide
+0,00 €
+Transaction Fee T4
+Request sections: T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Amount in Euro: 0,58 0,70 1,50 0,50 0,80 1,80 0,30 0,30 0,40 0,40 0,30 0,30
+user-account-1 10 0 99 0 0 0 0 0 0 0 0 0 154,30 €
+user-account-2 4 0 63 0 0 0 0 0 0 0 0 0 96,82 €
+Transaction Fee Seg T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Queries in Total: 14 0 162 0 0 0 0 0 0 0 0 0
+Total in Euro: 8,12 € 0,00 € 243,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 251,12 €Invoice Details
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+The explanation of the query fee categories (T1 to T6 and G1 to G6) can be found on our website:
+https://www.wmaccess.com/abfragekategorien
+T1: T2: T3: T4: T5: T6:
+4 0 9 0 0 0
+0 0 12 0 0 0
+0 0 4 0 0 0
+5 0 36 0 0 0
+0 0 19 0 0 0
+1 0 7 0 0 0
+2 0 6 0 0 0
+0 0 11 0 0 0
+0 0 15 0 0 0
+0 0 5 0 0 0
+1 0 23 0 0 0
+1 0 4 0 0 0
+0 0 11 0 0 0
+0,58 0,70 1,50 0,50 0,80 1,8016,50 €Kpi/22695 10,16 €GS 32090 11,08 €18,00 €
+28,50 €CRS/28432
+16,50 €WPN:24791 6,58 €Ttrb/17885 35,08 €SF-M 596/99-08 7,50 €22,50 €Invoice Details for wmView Query Reference
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+wmview, wmProfile and User Profiles Query Segments:
+56,90 €CCL/371515,82 €
+6,00 €AZR/31/27439
+Price for each Query in Euro:Query Reference:
+*Not specified*
+Wwt/15658PG 7772Cs/52113
+Rjn/11138
+
+2025-03-22 16:07:33,413 - INFO - ==================================================
+2025-03-22 16:07:33,413 - INFO - Sending request to OpenAI
+2025-03-22 16:07:35,643 - INFO - Received response from OpenAI:
+2025-03-22 16:07:35,644 - INFO - ==================================================
+2025-03-22 16:07:35,644 - INFO - 1. Extracted Company: CPB Software (Germany) GmbH
+2. Extracted Address: Im Bruch 3, 63897 Miltenberg/Main
+3. Verification:
+   - Is it a known company? Yes
+   - Does the address format look valid? Yes
+   - For well-known companies: Does it match known locations? Not Applicable
+4. Confidence Level: High
+5. Reasoning: CPB Software (Germany) GmbH is a known company, and the address format aligns with typical German business addresses, indicating legitimacy. The company's existence can be verified through official records and online resources.
+2025-03-22 16:07:35,644 - INFO - ==================================================
+2025-03-22 16:07:35,645 - INFO - Analysis result for 'Valid Invoice.pdf':
+2025-03-22 16:07:35,645 - INFO - Status: real
+2025-03-22 16:07:35,645 - INFO - Green points: 1
+2025-03-22 16:07:35,646 - INFO - Red points: 0
+2025-03-22 16:07:42,076 - INFO - Extracted text from PDF 'Fake Invoice.pdf':
+2025-03-22 16:07:42,077 - INFO - ==================================================
+2025-03-22 16:07:42,077 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-22 16:07:42,077 - INFO - ==================================================
+2025-03-22 16:07:42,078 - INFO - Sending request to OpenAI
+2025-03-22 16:07:44,031 - INFO - Received response from OpenAI:
+2025-03-22 16:07:44,032 - INFO - ==================================================
+2025-03-22 16:07:44,032 - INFO - 1. Extracted Company: DEMO - Sliced Invoices
+2. Extracted Address: Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345
+3. Verification:
+   - Is it a known company? (No)
+   - Does the address format look valid? (Yes)
+   - For well-known companies: Does it match known locations? (Not Applicable)
+4. Confidence Level: Medium
+5. Reasoning: The company name includes "DEMO," which suggests it is a demo or sample company rather than a legitimate business. The address format appears valid with a suite number, street address, city, state abbreviation, and zip code. However, the lack of a specific city name (replaced with "Your City") and the use of "DEMO" in the company name raises doubts about the legitimacy of this company.
+2025-03-22 16:07:44,033 - INFO - ==================================================
+2025-03-22 16:07:44,033 - INFO - Analysis result for 'Fake Invoice.pdf':
+2025-03-22 16:07:44,033 - INFO - Status: fake
+2025-03-22 16:07:44,033 - INFO - Green points: 0
+2025-03-22 16:07:44,033 - INFO - Red points: 4
