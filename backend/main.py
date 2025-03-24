@@ -58,16 +58,13 @@ async def analyze_invoice(file: UploadFile = File(...)) -> Dict:
         
         # Prompt focused on known company verification
         data = {
-            "model": "gpt-3.5-turbo",
+            "model": "gpt-4o-mini",
             "messages": [{
                 "role": "user",
                 "content": f"""Extract and analyze the company name and address from this invoice text.
                 Based on your knowledge:
                 1. Is this a known, legitimate company?
                 2. Does this address match the company's known location pattern?
-                3. For well-known companies (like Amazon, Microsoft, etc.), does this match their known office locations?
-                4. Is the address format consistent with real business addresses in that region?
-
                 Invoice text:
                 {text}
 
@@ -76,10 +73,7 @@ async def analyze_invoice(file: UploadFile = File(...)) -> Dict:
                 2. Extracted Address: [Address]
                 3. Verification:
                    - Is it a known company? (Yes/No)
-                   - Does the address format look valid? (Yes/No)
-                   - For well-known companies: Does it match known locations? (Yes/No/Not Applicable)
-                4. Confidence Level: (High/Medium/Low)
-                5. Reasoning: [Explain why you believe this is or isn't legitimate]"""
+                   - Does the address format look valid? (Yes/No)"""
             }]
         }
 
@@ -100,14 +94,19 @@ async def analyze_invoice(file: UploadFile = File(...)) -> Dict:
         logger.info("=" * 50)
 
         # First determine status based on critical checks
-        status = "fake"
-        if any(point.lower().endswith('(no)') for point in analysis.split('\n') if '?' in point and 'known company' in point.lower()):
-            status = "fake"
-        elif any(term in analysis.lower() for term in ['suspicious', 'fake', 'not legitimate', 'raises doubts', 'does not appear']):
-            status = "fake"
-        else:
-            status = "real"
-
+        status = "real"  # Start with assumption it's real
+        
+        # Check for any "No" answers in verification questions
+        for line in analysis.split('\n'):
+            line = line.strip().lower()
+            # Check for verification questions that end with "no"
+            if ('company?' in line or 'valid?' in line):
+                # Check if the answer is "No" at the end of the line
+                if line.endswith(' no') or line.endswith('no.') or line.endswith('no)'):
+                    status = "fake"  # Any "No" answer makes the invoice fake
+                    logger.info(f"Found 'No' answer in: {line}")
+                    break
+        
         # If status is fake, all points go to red_points
         green_points = []
         red_points = []

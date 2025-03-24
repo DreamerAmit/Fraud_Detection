@@ -784,3 +784,1195 @@ BSB # 4321 432Paid
 2025-03-22 16:07:44,033 - INFO - Status: fake
 2025-03-22 16:07:44,033 - INFO - Green points: 0
 2025-03-22 16:07:44,033 - INFO - Red points: 4
+2025-03-23 22:15:22,596 - INFO - Extracted text from PDF 'Valid Invoice.pdf':
+2025-03-23 22:15:22,597 - INFO - ==================================================
+2025-03-23 22:15:22,597 - INFO - CPB Software (Germany) GmbH - Im Bruch 3 - 63897 Miltenberg/Main
+Musterkunde AG
+Mr. John Doe
+Musterstr. 23
+12345 Musterstadt Name:  Stefanie Müller
+Phone: +49 9371 9786-0
+Invoice WMACCESS Internet
+VAT No. DE199378386
+Invoice No
+123100401
+Amount
+-without VAT-quantity
+130,00 € 1
+10,00 € 0
+50,00 € 0
+1.000,00 € 0
+10,00 € 0
+0,58 € 14
+0,70 € 0
+1,50 € 162
+0,50 € 0
+0,80 € 0
+1,80 € 0
+0,30 € 0
+0,30 € 0
+0,40 € 0
+0,40 € 0
+0,30 € 0
+0,30 € 0
+Terms of Payment: Immediate payment without discount. Any bank charges must be paid by the invoice recipient.
+Bank fees at our expense will be charged to the invoice recipient!
+Please credit the amount invoiced to IBAN DE29 1234 5678 9012 3456 78 | BIC GENODE51MIC (SEPA Credit Transfer)
+This invoice is generated automatically and will not be signedTransaction Fee T6 0,00 €130,00 €
+Basis fee for additional user accounts 0,00 €
+0,00 €
+0,00 €Basic Fee wmPos
+Change of user accounts
+Transaction Fee T101.02.2024 - 29.02.2024
+Transaction Fee G6 0,00 €0,00 €
+VAT 19 % 72,41 €Transaction Fee G3 0,00 €
+Transaction Fee G5 0,00 €Transaction Fee G1 0,00 €
+Transaction Fee G4Transaction Fee G2
+0,00 €Date
+1. März 2024Customer No
+12345Invoice Period
+0,00 €
+Transaction Fee T5 0,00 €243,00 €8,12 €
+Transaction Fee T2 0,00 €
+Transaction Fee T3
+Gross Amount incl. VAT 453,53 €Total 381,12 €Service Description Total Amount
+Basic Fee wmView
+Basic Fee wmGuide
+0,00 €
+Transaction Fee T4
+Request sections: T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Amount in Euro: 0,58 0,70 1,50 0,50 0,80 1,80 0,30 0,30 0,40 0,40 0,30 0,30
+user-account-1 10 0 99 0 0 0 0 0 0 0 0 0 154,30 €
+user-account-2 4 0 63 0 0 0 0 0 0 0 0 0 96,82 €
+Transaction Fee Seg T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Queries in Total: 14 0 162 0 0 0 0 0 0 0 0 0
+Total in Euro: 8,12 € 0,00 € 243,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 251,12 €Invoice Details
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+The explanation of the query fee categories (T1 to T6 and G1 to G6) can be found on our website:
+https://www.wmaccess.com/abfragekategorien
+T1: T2: T3: T4: T5: T6:
+4 0 9 0 0 0
+0 0 12 0 0 0
+0 0 4 0 0 0
+5 0 36 0 0 0
+0 0 19 0 0 0
+1 0 7 0 0 0
+2 0 6 0 0 0
+0 0 11 0 0 0
+0 0 15 0 0 0
+0 0 5 0 0 0
+1 0 23 0 0 0
+1 0 4 0 0 0
+0 0 11 0 0 0
+0,58 0,70 1,50 0,50 0,80 1,8016,50 €Kpi/22695 10,16 €GS 32090 11,08 €18,00 €
+28,50 €CRS/28432
+16,50 €WPN:24791 6,58 €Ttrb/17885 35,08 €SF-M 596/99-08 7,50 €22,50 €Invoice Details for wmView Query Reference
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+wmview, wmProfile and User Profiles Query Segments:
+56,90 €CCL/371515,82 €
+6,00 €AZR/31/27439
+Price for each Query in Euro:Query Reference:
+*Not specified*
+Wwt/15658PG 7772Cs/52113
+Rjn/11138
+
+2025-03-23 22:15:22,597 - INFO - ==================================================
+2025-03-23 22:15:22,598 - INFO - Sending request to OpenAI
+2025-03-23 22:15:25,140 - INFO - Received response from OpenAI:
+2025-03-23 22:15:25,140 - INFO - ==================================================
+2025-03-23 22:15:25,141 - INFO - 1. Extracted Company: CPB Software (Germany) GmbH
+2. Extracted Address: Im Bruch 3, 63897 Miltenberg/Main
+3. Verification:
+   - Is it a known company? Yes
+   - Does the address format look valid? Yes
+   - For well-known companies: Not Applicable
+4. Confidence Level: High
+5. Reasoning: The company CPB Software (Germany) GmbH is a known software company based in Germany. The address format provided is typical for a business address in Germany, consisting of the street name, house number, postal code, and city. Hence, this information appears to be legitimate.
+2025-03-23 22:15:25,141 - INFO - ==================================================
+2025-03-23 22:15:25,141 - INFO - Analysis result for 'Valid Invoice.pdf':
+2025-03-23 22:15:25,141 - INFO - Status: real
+2025-03-23 22:15:25,142 - INFO - Green points: 1
+2025-03-23 22:15:25,142 - INFO - Red points: 0
+2025-03-23 22:15:46,679 - INFO - Extracted text from PDF 'Fake Invoice.pdf':
+2025-03-23 22:15:46,679 - INFO - ==================================================
+2025-03-23 22:15:46,680 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-23 22:15:46,680 - INFO - ==================================================
+2025-03-23 22:15:46,680 - INFO - Sending request to OpenAI
+2025-03-23 22:15:48,723 - INFO - Received response from OpenAI:
+2025-03-23 22:15:48,724 - INFO - ==================================================
+2025-03-23 22:15:48,724 - INFO - 1. Extracted Company: DEMO - Sliced Invoices
+2. Extracted Address: Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345
+3. Verification:
+   - Is it a known company? (Yes)
+   - Does the address format look valid? (Yes)
+   - For well-known companies: Does it match known locations? (Not Applicable)
+4. Confidence Level: High
+5. Reasoning: The company name "DEMO - Sliced Invoices" is associated with the email address admin@slicedinvoices.com provided in the text. The address format with suite number, street name, city, state, and ZIP code appears to be a valid business address. Since it is a demo company, it may not have a physical location in the city mentioned, but this does not invalidate its legitimacy as a business.
+2025-03-23 22:15:48,724 - INFO - ==================================================
+2025-03-23 22:15:48,724 - INFO - Analysis result for 'Fake Invoice.pdf':
+2025-03-23 22:15:48,725 - INFO - Status: real
+2025-03-23 22:15:48,725 - INFO - Green points: 3
+2025-03-23 22:15:48,725 - INFO - Red points: 1
+2025-03-23 22:17:48,825 - INFO - Extracted text from PDF 'Fake Invoice.pdf':
+2025-03-23 22:17:48,826 - INFO - ==================================================
+2025-03-23 22:17:48,826 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-23 22:17:48,826 - INFO - ==================================================
+2025-03-23 22:17:48,826 - INFO - Sending request to OpenAI
+2025-03-23 22:17:53,395 - INFO - Received response from OpenAI:
+2025-03-23 22:17:53,396 - INFO - ==================================================
+2025-03-23 22:17:53,396 - INFO - 1. Extracted Company: DEMO - Sliced Invoices  
+2. Extracted Address: Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345  
+3. Verification:  
+   - Is it a known company? (No)  
+   - Does the address format look valid? (Yes)  
+   - For well-known companies: Does it match known locations? (Not Applicable)  
+4. Confidence Level: Medium  
+5. Reasoning: The company name "DEMO - Sliced Invoices" does not correspond to a known, established business based on common knowledge, nor is there public recognition of such a company. The address "Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345" follows a valid address format. However, “Somewhere” and “Your City” are placeholders, indicating that this might be a template invoice rather than a legitimate business document. Since it doesn’t match any known company’s location and merely appears to be a demo or fictitious entity, confidence is rated as medium due to the plausible structure of the address and the possibility it could be used for legitimate invoicing in a real business scenario.
+2025-03-23 22:17:53,397 - INFO - ==================================================
+2025-03-23 22:17:53,397 - INFO - Analysis result for 'Fake Invoice.pdf':
+2025-03-23 22:17:53,397 - INFO - Status: real
+2025-03-23 22:17:53,397 - INFO - Green points: 2
+2025-03-23 22:17:53,397 - INFO - Red points: 2
+2025-03-23 22:20:18,104 - INFO - Extracted text from PDF 'Fake Invoice.pdf':
+2025-03-23 22:20:18,104 - INFO - ==================================================
+2025-03-23 22:20:18,105 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-23 22:20:18,105 - INFO - ==================================================
+2025-03-23 22:20:18,105 - INFO - Sending request to OpenAI
+2025-03-23 22:20:23,691 - INFO - Received response from OpenAI:
+2025-03-23 22:20:23,692 - INFO - ==================================================
+2025-03-23 22:20:23,692 - INFO - 1. Extracted Company: DEMO - Sliced Invoices
+2. Extracted Address: Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345
+3. Verification:
+   - Is it a known company? No
+   - Does the address format look valid? Yes
+   - For well-known companies: Does it match known locations? Not Applicable
+4. Confidence Level: Medium
+5. Reasoning: DEMO - Sliced Invoices appears to be a placeholder or sample company name rather than a legitimate, recognized business. The address "123 Somewhere Street" and the city "Your City" indicate that this is likely fictitious or used for illustrative purposes rather than a real location. The address format is consistent with typical business addresses in the U.S. (suite number, street address, city, state, and ZIP code), but there is no indication that it corresponds to an actual, operating business. Therefore, while the address format looks valid, without a known company to validate, my confidence in it being legitimate is medium.
+2025-03-23 22:20:23,692 - INFO - ==================================================
+2025-03-23 22:20:23,693 - INFO - Analysis result for 'Fake Invoice.pdf':
+2025-03-23 22:20:23,693 - INFO - Status: real
+2025-03-23 22:20:23,693 - INFO - Green points: 1
+2025-03-23 22:20:23,693 - INFO - Red points: 0
+2025-03-23 22:32:33,202 - INFO - Extracted text from PDF 'Fake Invoice.pdf':
+2025-03-23 22:32:33,202 - INFO - ==================================================
+2025-03-23 22:32:33,203 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-23 22:32:33,203 - INFO - ==================================================
+2025-03-23 22:32:33,203 - INFO - Sending request to OpenAI
+2025-03-23 22:32:35,138 - INFO - Received response from OpenAI:
+2025-03-23 22:32:35,139 - INFO - ==================================================
+2025-03-23 22:32:35,139 - INFO - 1. Extracted Company: DEMO - Sliced Invoices  
+2. Extracted Address: Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345  
+3. Verification:  
+   - Is it a known company? (No)  
+   - Does the address format look valid? (Yes)  
+2025-03-23 22:32:35,139 - INFO - ==================================================
+2025-03-23 22:32:35,139 - INFO - Analysis result for 'Fake Invoice.pdf':
+2025-03-23 22:32:35,139 - INFO - Status: real
+2025-03-23 22:32:35,139 - INFO - Green points: 1
+2025-03-23 22:32:35,139 - INFO - Red points: 1
+2025-03-23 22:34:13,114 - INFO - Extracted text from PDF 'Fake Invoice.pdf':
+2025-03-23 22:34:13,114 - INFO - ==================================================
+2025-03-23 22:34:13,114 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-23 22:34:13,115 - INFO - ==================================================
+2025-03-23 22:34:13,115 - INFO - Sending request to OpenAI
+2025-03-23 22:34:14,761 - INFO - Received response from OpenAI:
+2025-03-23 22:34:14,761 - INFO - ==================================================
+2025-03-23 22:34:14,761 - INFO - 1. Extracted Company: DEMO - Sliced Invoices
+2. Extracted Address: Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345
+3. Verification:
+   - Is it a known company? No
+   - Does the address format look valid? Yes
+2025-03-23 22:34:14,761 - INFO - ==================================================
+2025-03-23 22:34:14,762 - INFO - Found 'No' answer in: - is it a known company? no
+2025-03-23 22:34:14,762 - INFO - Analysis result for 'Fake Invoice.pdf':
+2025-03-23 22:34:14,762 - INFO - Status: fake
+2025-03-23 22:34:14,762 - INFO - Green points: 0
+2025-03-23 22:34:14,762 - INFO - Red points: 2
+2025-03-23 22:34:25,941 - INFO - Extracted text from PDF 'Valid Invoice.pdf':
+2025-03-23 22:34:25,941 - INFO - ==================================================
+2025-03-23 22:34:25,941 - INFO - CPB Software (Germany) GmbH - Im Bruch 3 - 63897 Miltenberg/Main
+Musterkunde AG
+Mr. John Doe
+Musterstr. 23
+12345 Musterstadt Name:  Stefanie Müller
+Phone: +49 9371 9786-0
+Invoice WMACCESS Internet
+VAT No. DE199378386
+Invoice No
+123100401
+Amount
+-without VAT-quantity
+130,00 € 1
+10,00 € 0
+50,00 € 0
+1.000,00 € 0
+10,00 € 0
+0,58 € 14
+0,70 € 0
+1,50 € 162
+0,50 € 0
+0,80 € 0
+1,80 € 0
+0,30 € 0
+0,30 € 0
+0,40 € 0
+0,40 € 0
+0,30 € 0
+0,30 € 0
+Terms of Payment: Immediate payment without discount. Any bank charges must be paid by the invoice recipient.
+Bank fees at our expense will be charged to the invoice recipient!
+Please credit the amount invoiced to IBAN DE29 1234 5678 9012 3456 78 | BIC GENODE51MIC (SEPA Credit Transfer)
+This invoice is generated automatically and will not be signedTransaction Fee T6 0,00 €130,00 €
+Basis fee for additional user accounts 0,00 €
+0,00 €
+0,00 €Basic Fee wmPos
+Change of user accounts
+Transaction Fee T101.02.2024 - 29.02.2024
+Transaction Fee G6 0,00 €0,00 €
+VAT 19 % 72,41 €Transaction Fee G3 0,00 €
+Transaction Fee G5 0,00 €Transaction Fee G1 0,00 €
+Transaction Fee G4Transaction Fee G2
+0,00 €Date
+1. März 2024Customer No
+12345Invoice Period
+0,00 €
+Transaction Fee T5 0,00 €243,00 €8,12 €
+Transaction Fee T2 0,00 €
+Transaction Fee T3
+Gross Amount incl. VAT 453,53 €Total 381,12 €Service Description Total Amount
+Basic Fee wmView
+Basic Fee wmGuide
+0,00 €
+Transaction Fee T4
+Request sections: T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Amount in Euro: 0,58 0,70 1,50 0,50 0,80 1,80 0,30 0,30 0,40 0,40 0,30 0,30
+user-account-1 10 0 99 0 0 0 0 0 0 0 0 0 154,30 €
+user-account-2 4 0 63 0 0 0 0 0 0 0 0 0 96,82 €
+Transaction Fee Seg T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Queries in Total: 14 0 162 0 0 0 0 0 0 0 0 0
+Total in Euro: 8,12 € 0,00 € 243,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 251,12 €Invoice Details
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+The explanation of the query fee categories (T1 to T6 and G1 to G6) can be found on our website:
+https://www.wmaccess.com/abfragekategorien
+T1: T2: T3: T4: T5: T6:
+4 0 9 0 0 0
+0 0 12 0 0 0
+0 0 4 0 0 0
+5 0 36 0 0 0
+0 0 19 0 0 0
+1 0 7 0 0 0
+2 0 6 0 0 0
+0 0 11 0 0 0
+0 0 15 0 0 0
+0 0 5 0 0 0
+1 0 23 0 0 0
+1 0 4 0 0 0
+0 0 11 0 0 0
+0,58 0,70 1,50 0,50 0,80 1,8016,50 €Kpi/22695 10,16 €GS 32090 11,08 €18,00 €
+28,50 €CRS/28432
+16,50 €WPN:24791 6,58 €Ttrb/17885 35,08 €SF-M 596/99-08 7,50 €22,50 €Invoice Details for wmView Query Reference
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+wmview, wmProfile and User Profiles Query Segments:
+56,90 €CCL/371515,82 €
+6,00 €AZR/31/27439
+Price for each Query in Euro:Query Reference:
+*Not specified*
+Wwt/15658PG 7772Cs/52113
+Rjn/11138
+
+2025-03-23 22:34:25,942 - INFO - ==================================================
+2025-03-23 22:34:25,942 - INFO - Sending request to OpenAI
+2025-03-23 22:34:27,444 - INFO - Received response from OpenAI:
+2025-03-23 22:34:27,444 - INFO - ==================================================
+2025-03-23 22:34:27,445 - INFO - 1. Extracted Company: CPB Software (Germany) GmbH  
+2. Extracted Address: Im Bruch 3, 63897 Miltenberg/Main  
+3. Verification:  
+   - Is it a known company? Yes  
+   - Does the address format look valid? Yes  
+2025-03-23 22:34:27,445 - INFO - ==================================================
+2025-03-23 22:34:27,445 - INFO - Found 'No' answer in: - is it a known company? yes
+2025-03-23 22:34:27,445 - INFO - Analysis result for 'Valid Invoice.pdf':
+2025-03-23 22:34:27,445 - INFO - Status: fake
+2025-03-23 22:34:27,446 - INFO - Green points: 0
+2025-03-23 22:34:27,446 - INFO - Red points: 2
+2025-03-23 22:36:17,087 - INFO - Extracted text from PDF 'Valid Invoice.pdf':
+2025-03-23 22:36:17,088 - INFO - ==================================================
+2025-03-23 22:36:17,088 - INFO - CPB Software (Germany) GmbH - Im Bruch 3 - 63897 Miltenberg/Main
+Musterkunde AG
+Mr. John Doe
+Musterstr. 23
+12345 Musterstadt Name:  Stefanie Müller
+Phone: +49 9371 9786-0
+Invoice WMACCESS Internet
+VAT No. DE199378386
+Invoice No
+123100401
+Amount
+-without VAT-quantity
+130,00 € 1
+10,00 € 0
+50,00 € 0
+1.000,00 € 0
+10,00 € 0
+0,58 € 14
+0,70 € 0
+1,50 € 162
+0,50 € 0
+0,80 € 0
+1,80 € 0
+0,30 € 0
+0,30 € 0
+0,40 € 0
+0,40 € 0
+0,30 € 0
+0,30 € 0
+Terms of Payment: Immediate payment without discount. Any bank charges must be paid by the invoice recipient.
+Bank fees at our expense will be charged to the invoice recipient!
+Please credit the amount invoiced to IBAN DE29 1234 5678 9012 3456 78 | BIC GENODE51MIC (SEPA Credit Transfer)
+This invoice is generated automatically and will not be signedTransaction Fee T6 0,00 €130,00 €
+Basis fee for additional user accounts 0,00 €
+0,00 €
+0,00 €Basic Fee wmPos
+Change of user accounts
+Transaction Fee T101.02.2024 - 29.02.2024
+Transaction Fee G6 0,00 €0,00 €
+VAT 19 % 72,41 €Transaction Fee G3 0,00 €
+Transaction Fee G5 0,00 €Transaction Fee G1 0,00 €
+Transaction Fee G4Transaction Fee G2
+0,00 €Date
+1. März 2024Customer No
+12345Invoice Period
+0,00 €
+Transaction Fee T5 0,00 €243,00 €8,12 €
+Transaction Fee T2 0,00 €
+Transaction Fee T3
+Gross Amount incl. VAT 453,53 €Total 381,12 €Service Description Total Amount
+Basic Fee wmView
+Basic Fee wmGuide
+0,00 €
+Transaction Fee T4
+Request sections: T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Amount in Euro: 0,58 0,70 1,50 0,50 0,80 1,80 0,30 0,30 0,40 0,40 0,30 0,30
+user-account-1 10 0 99 0 0 0 0 0 0 0 0 0 154,30 €
+user-account-2 4 0 63 0 0 0 0 0 0 0 0 0 96,82 €
+Transaction Fee Seg T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Queries in Total: 14 0 162 0 0 0 0 0 0 0 0 0
+Total in Euro: 8,12 € 0,00 € 243,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 251,12 €Invoice Details
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+The explanation of the query fee categories (T1 to T6 and G1 to G6) can be found on our website:
+https://www.wmaccess.com/abfragekategorien
+T1: T2: T3: T4: T5: T6:
+4 0 9 0 0 0
+0 0 12 0 0 0
+0 0 4 0 0 0
+5 0 36 0 0 0
+0 0 19 0 0 0
+1 0 7 0 0 0
+2 0 6 0 0 0
+0 0 11 0 0 0
+0 0 15 0 0 0
+0 0 5 0 0 0
+1 0 23 0 0 0
+1 0 4 0 0 0
+0 0 11 0 0 0
+0,58 0,70 1,50 0,50 0,80 1,8016,50 €Kpi/22695 10,16 €GS 32090 11,08 €18,00 €
+28,50 €CRS/28432
+16,50 €WPN:24791 6,58 €Ttrb/17885 35,08 €SF-M 596/99-08 7,50 €22,50 €Invoice Details for wmView Query Reference
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+wmview, wmProfile and User Profiles Query Segments:
+56,90 €CCL/371515,82 €
+6,00 €AZR/31/27439
+Price for each Query in Euro:Query Reference:
+*Not specified*
+Wwt/15658PG 7772Cs/52113
+Rjn/11138
+
+2025-03-23 22:36:17,089 - INFO - ==================================================
+2025-03-23 22:36:17,089 - INFO - Sending request to OpenAI
+2025-03-23 22:36:20,518 - INFO - Received response from OpenAI:
+2025-03-23 22:36:20,519 - INFO - ==================================================
+2025-03-23 22:36:20,519 - INFO - 1. Extracted Company: CPB Software (Germany) GmbH  
+2. Extracted Address: Im Bruch 3 - 63897 Miltenberg/Main  
+3. Verification:  
+   - Is it a known company? (Yes)  
+   - Does the address format look valid? (Yes)  
+
+### Analysis:
+- **Company Overview**: CPB Software (Germany) GmbH appears to be a legitimate software company based in Germany, providing various software solutions.
+- **Address Validation**: The address provided follows a typical German address format, with the street name ("Im Bruch"), postal code ("63897"), and city ("Miltenberg/Main"), indicating it is complete and logically structured.
+2025-03-23 22:36:20,519 - INFO - ==================================================
+2025-03-23 22:36:20,520 - INFO - Analysis result for 'Valid Invoice.pdf':
+2025-03-23 22:36:20,520 - INFO - Status: real
+2025-03-23 22:36:20,520 - INFO - Green points: 2
+2025-03-23 22:36:20,520 - INFO - Red points: 0
+2025-03-23 22:36:27,717 - INFO - Extracted text from PDF 'Fake Invoice.pdf':
+2025-03-23 22:36:27,717 - INFO - ==================================================
+2025-03-23 22:36:27,717 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-23 22:36:27,718 - INFO - ==================================================
+2025-03-23 22:36:27,718 - INFO - Sending request to OpenAI
+2025-03-23 22:36:29,194 - INFO - Received response from OpenAI:
+2025-03-23 22:36:29,194 - INFO - ==================================================
+2025-03-23 22:36:29,195 - INFO - 1. Extracted Company: DEMO - Sliced Invoices  
+2. Extracted Address: Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345  
+3. Verification:  
+   - Is it a known company? (No)  
+   - Does the address format look valid? (Yes)  
+2025-03-23 22:36:29,195 - INFO - ==================================================
+2025-03-23 22:36:29,195 - INFO - Analysis result for 'Fake Invoice.pdf':
+2025-03-23 22:36:29,195 - INFO - Status: real
+2025-03-23 22:36:29,195 - INFO - Green points: 1
+2025-03-23 22:36:29,195 - INFO - Red points: 1
+2025-03-23 22:37:30,522 - INFO - Extracted text from PDF 'Fake Invoice.pdf':
+2025-03-23 22:37:30,523 - INFO - ==================================================
+2025-03-23 22:37:30,523 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-23 22:37:30,523 - INFO - ==================================================
+2025-03-23 22:37:30,523 - INFO - Sending request to OpenAI
+2025-03-23 22:37:32,633 - INFO - Received response from OpenAI:
+2025-03-23 22:37:32,634 - INFO - ==================================================
+2025-03-23 22:37:32,634 - INFO - 1. Extracted Company: DEMO - Sliced Invoices  
+2. Extracted Address: Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345  
+3. Verification:  
+   - Is it a known company? (No)  
+   - Does the address format look valid? (Yes)  
+2025-03-23 22:37:32,634 - INFO - ==================================================
+2025-03-23 22:37:32,635 - INFO - Found 'No' answer in: - is it a known company? (no)
+2025-03-23 22:37:32,635 - INFO - Analysis result for 'Fake Invoice.pdf':
+2025-03-23 22:37:32,635 - INFO - Status: fake
+2025-03-23 22:37:32,635 - INFO - Green points: 0
+2025-03-23 22:37:32,635 - INFO - Red points: 2
+2025-03-23 22:37:45,911 - INFO - Extracted text from PDF 'Valid Invoice.pdf':
+2025-03-23 22:37:45,912 - INFO - ==================================================
+2025-03-23 22:37:45,912 - INFO - CPB Software (Germany) GmbH - Im Bruch 3 - 63897 Miltenberg/Main
+Musterkunde AG
+Mr. John Doe
+Musterstr. 23
+12345 Musterstadt Name:  Stefanie Müller
+Phone: +49 9371 9786-0
+Invoice WMACCESS Internet
+VAT No. DE199378386
+Invoice No
+123100401
+Amount
+-without VAT-quantity
+130,00 € 1
+10,00 € 0
+50,00 € 0
+1.000,00 € 0
+10,00 € 0
+0,58 € 14
+0,70 € 0
+1,50 € 162
+0,50 € 0
+0,80 € 0
+1,80 € 0
+0,30 € 0
+0,30 € 0
+0,40 € 0
+0,40 € 0
+0,30 € 0
+0,30 € 0
+Terms of Payment: Immediate payment without discount. Any bank charges must be paid by the invoice recipient.
+Bank fees at our expense will be charged to the invoice recipient!
+Please credit the amount invoiced to IBAN DE29 1234 5678 9012 3456 78 | BIC GENODE51MIC (SEPA Credit Transfer)
+This invoice is generated automatically and will not be signedTransaction Fee T6 0,00 €130,00 €
+Basis fee for additional user accounts 0,00 €
+0,00 €
+0,00 €Basic Fee wmPos
+Change of user accounts
+Transaction Fee T101.02.2024 - 29.02.2024
+Transaction Fee G6 0,00 €0,00 €
+VAT 19 % 72,41 €Transaction Fee G3 0,00 €
+Transaction Fee G5 0,00 €Transaction Fee G1 0,00 €
+Transaction Fee G4Transaction Fee G2
+0,00 €Date
+1. März 2024Customer No
+12345Invoice Period
+0,00 €
+Transaction Fee T5 0,00 €243,00 €8,12 €
+Transaction Fee T2 0,00 €
+Transaction Fee T3
+Gross Amount incl. VAT 453,53 €Total 381,12 €Service Description Total Amount
+Basic Fee wmView
+Basic Fee wmGuide
+0,00 €
+Transaction Fee T4
+Request sections: T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Amount in Euro: 0,58 0,70 1,50 0,50 0,80 1,80 0,30 0,30 0,40 0,40 0,30 0,30
+user-account-1 10 0 99 0 0 0 0 0 0 0 0 0 154,30 €
+user-account-2 4 0 63 0 0 0 0 0 0 0 0 0 96,82 €
+Transaction Fee Seg T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Queries in Total: 14 0 162 0 0 0 0 0 0 0 0 0
+Total in Euro: 8,12 € 0,00 € 243,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 251,12 €Invoice Details
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+The explanation of the query fee categories (T1 to T6 and G1 to G6) can be found on our website:
+https://www.wmaccess.com/abfragekategorien
+T1: T2: T3: T4: T5: T6:
+4 0 9 0 0 0
+0 0 12 0 0 0
+0 0 4 0 0 0
+5 0 36 0 0 0
+0 0 19 0 0 0
+1 0 7 0 0 0
+2 0 6 0 0 0
+0 0 11 0 0 0
+0 0 15 0 0 0
+0 0 5 0 0 0
+1 0 23 0 0 0
+1 0 4 0 0 0
+0 0 11 0 0 0
+0,58 0,70 1,50 0,50 0,80 1,8016,50 €Kpi/22695 10,16 €GS 32090 11,08 €18,00 €
+28,50 €CRS/28432
+16,50 €WPN:24791 6,58 €Ttrb/17885 35,08 €SF-M 596/99-08 7,50 €22,50 €Invoice Details for wmView Query Reference
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+wmview, wmProfile and User Profiles Query Segments:
+56,90 €CCL/371515,82 €
+6,00 €AZR/31/27439
+Price for each Query in Euro:Query Reference:
+*Not specified*
+Wwt/15658PG 7772Cs/52113
+Rjn/11138
+
+2025-03-23 22:37:45,913 - INFO - ==================================================
+2025-03-23 22:37:45,913 - INFO - Sending request to OpenAI
+2025-03-23 22:37:48,581 - INFO - Received response from OpenAI:
+2025-03-23 22:37:48,581 - INFO - ==================================================
+2025-03-23 22:37:48,581 - INFO - 1. Extracted Company: CPB Software (Germany) GmbH  
+2. Extracted Address: Im Bruch 3 - 63897 Miltenberg/Main  
+3. Verification:  
+   - Is it a known company? (Yes)  
+   - Does the address format look valid? (Yes)  
+
+### Analysis:
+- **Known Company**: CPB Software (Germany) GmbH is a legitimate company known for software development and services. A search confirms its existence and relevance in the tech sector.
+- **Address Validation**: The address format follows the standard structure for German addresses, including street name, house number, postal code, and city. The city name, Miltenberg, and the postal code, 63897, are consistent with known locations in Germany. Thus, the address is valid.
+2025-03-23 22:37:48,581 - INFO - ==================================================
+2025-03-23 22:37:48,581 - INFO - Analysis result for 'Valid Invoice.pdf':
+2025-03-23 22:37:48,582 - INFO - Status: real
+2025-03-23 22:37:48,582 - INFO - Green points: 2
+2025-03-23 22:37:48,582 - INFO - Red points: 0
+2025-03-23 22:39:36,015 - INFO - Extracted text from PDF 'Fake Invoice.pdf':
+2025-03-23 22:39:36,015 - INFO - ==================================================
+2025-03-23 22:39:36,015 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-23 22:39:36,015 - INFO - ==================================================
+2025-03-23 22:39:36,016 - INFO - Sending request to OpenAI
+2025-03-23 22:39:38,897 - INFO - Received response from OpenAI:
+2025-03-23 22:39:38,897 - INFO - ==================================================
+2025-03-23 22:39:38,898 - INFO - 1. Extracted Company: DEMO - Sliced Invoices  
+2. Extracted Address: Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345  
+3. Verification:  
+   - Is it a known company? (No)  
+   - Does the address format look valid? (Yes)  
+
+**Analysis:**
+- DEMO - Sliced Invoices appears to be part of the invoice service with a likely generic or placeholder name, suggesting it may not refer to a specific, well-known company. 
+- The address format adheres to standard mailing conventions; however, "Your City" is not a valid city name and indicates that the address may be an example or placeholder rather than an actual location.
+2025-03-23 22:39:38,898 - INFO - ==================================================
+2025-03-23 22:39:38,898 - INFO - Found 'No' answer in: - is it a known company? (no)
+2025-03-23 22:39:38,898 - INFO - Analysis result for 'Fake Invoice.pdf':
+2025-03-23 22:39:38,898 - INFO - Status: fake
+2025-03-23 22:39:38,899 - INFO - Green points: 0
+2025-03-23 22:39:38,899 - INFO - Red points: 2
+2025-03-23 22:40:24,262 - INFO - Extracted text from PDF 'Valid Invoice.pdf':
+2025-03-23 22:40:24,262 - INFO - ==================================================
+2025-03-23 22:40:24,262 - INFO - CPB Software (Germany) GmbH - Im Bruch 3 - 63897 Miltenberg/Main
+Musterkunde AG
+Mr. John Doe
+Musterstr. 23
+12345 Musterstadt Name:  Stefanie Müller
+Phone: +49 9371 9786-0
+Invoice WMACCESS Internet
+VAT No. DE199378386
+Invoice No
+123100401
+Amount
+-without VAT-quantity
+130,00 € 1
+10,00 € 0
+50,00 € 0
+1.000,00 € 0
+10,00 € 0
+0,58 € 14
+0,70 € 0
+1,50 € 162
+0,50 € 0
+0,80 € 0
+1,80 € 0
+0,30 € 0
+0,30 € 0
+0,40 € 0
+0,40 € 0
+0,30 € 0
+0,30 € 0
+Terms of Payment: Immediate payment without discount. Any bank charges must be paid by the invoice recipient.
+Bank fees at our expense will be charged to the invoice recipient!
+Please credit the amount invoiced to IBAN DE29 1234 5678 9012 3456 78 | BIC GENODE51MIC (SEPA Credit Transfer)
+This invoice is generated automatically and will not be signedTransaction Fee T6 0,00 €130,00 €
+Basis fee for additional user accounts 0,00 €
+0,00 €
+0,00 €Basic Fee wmPos
+Change of user accounts
+Transaction Fee T101.02.2024 - 29.02.2024
+Transaction Fee G6 0,00 €0,00 €
+VAT 19 % 72,41 €Transaction Fee G3 0,00 €
+Transaction Fee G5 0,00 €Transaction Fee G1 0,00 €
+Transaction Fee G4Transaction Fee G2
+0,00 €Date
+1. März 2024Customer No
+12345Invoice Period
+0,00 €
+Transaction Fee T5 0,00 €243,00 €8,12 €
+Transaction Fee T2 0,00 €
+Transaction Fee T3
+Gross Amount incl. VAT 453,53 €Total 381,12 €Service Description Total Amount
+Basic Fee wmView
+Basic Fee wmGuide
+0,00 €
+Transaction Fee T4
+Request sections: T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Amount in Euro: 0,58 0,70 1,50 0,50 0,80 1,80 0,30 0,30 0,40 0,40 0,30 0,30
+user-account-1 10 0 99 0 0 0 0 0 0 0 0 0 154,30 €
+user-account-2 4 0 63 0 0 0 0 0 0 0 0 0 96,82 €
+Transaction Fee Seg T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Queries in Total: 14 0 162 0 0 0 0 0 0 0 0 0
+Total in Euro: 8,12 € 0,00 € 243,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 251,12 €Invoice Details
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+The explanation of the query fee categories (T1 to T6 and G1 to G6) can be found on our website:
+https://www.wmaccess.com/abfragekategorien
+T1: T2: T3: T4: T5: T6:
+4 0 9 0 0 0
+0 0 12 0 0 0
+0 0 4 0 0 0
+5 0 36 0 0 0
+0 0 19 0 0 0
+1 0 7 0 0 0
+2 0 6 0 0 0
+0 0 11 0 0 0
+0 0 15 0 0 0
+0 0 5 0 0 0
+1 0 23 0 0 0
+1 0 4 0 0 0
+0 0 11 0 0 0
+0,58 0,70 1,50 0,50 0,80 1,8016,50 €Kpi/22695 10,16 €GS 32090 11,08 €18,00 €
+28,50 €CRS/28432
+16,50 €WPN:24791 6,58 €Ttrb/17885 35,08 €SF-M 596/99-08 7,50 €22,50 €Invoice Details for wmView Query Reference
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+wmview, wmProfile and User Profiles Query Segments:
+56,90 €CCL/371515,82 €
+6,00 €AZR/31/27439
+Price for each Query in Euro:Query Reference:
+*Not specified*
+Wwt/15658PG 7772Cs/52113
+Rjn/11138
+
+2025-03-23 22:40:24,263 - INFO - ==================================================
+2025-03-23 22:40:24,263 - INFO - Sending request to OpenAI
+2025-03-23 22:40:28,689 - INFO - Received response from OpenAI:
+2025-03-23 22:40:28,689 - INFO - ==================================================
+2025-03-23 22:40:28,689 - INFO - 1. Extracted Company: CPB Software (Germany) GmbH  
+2. Extracted Address: Im Bruch 3, 63897 Miltenberg/Main  
+3. Verification:  
+   - Is it a known company? (Yes)  
+   - Does the address format look valid? (Yes)  
+
+### Analysis:
+
+1. **Extracted Company**: The name "CPB Software (Germany) GmbH" indicates that it is a GmbH (limited liability company) which is a common form of business organization in Germany. 
+
+2. **Extracted Address**: The address "Im Bruch 3, 63897 Miltenberg/Main" follows a typical German address format, which includes a street name followed by the building number, postal code, city name, and often includes a regional name (in this case, "Main" referring to the Main river area).
+
+3. **Verification**:
+   - **Is it a known company?**: Yes, CPB Software (Germany) GmbH is recognized in the software industry and typically would have a legitimate presence in Germany.
+   - **Does the address format look valid?**: Yes, the format matches standard conventions for addresses in Germany, suggesting it is properly structured and likely valid.
+2025-03-23 22:40:28,690 - INFO - ==================================================
+2025-03-23 22:40:28,690 - INFO - Analysis result for 'Valid Invoice.pdf':
+2025-03-23 22:40:28,690 - INFO - Status: real
+2025-03-23 22:40:28,690 - INFO - Green points: 2
+2025-03-23 22:40:28,690 - INFO - Red points: 0
+2025-03-23 22:47:14,204 - INFO - Extracted text from PDF 'Valid Invoice.pdf':
+2025-03-23 22:47:14,204 - INFO - ==================================================
+2025-03-23 22:47:14,204 - INFO - CPB Software (Germany) GmbH - Im Bruch 3 - 63897 Miltenberg/Main
+Musterkunde AG
+Mr. John Doe
+Musterstr. 23
+12345 Musterstadt Name:  Stefanie Müller
+Phone: +49 9371 9786-0
+Invoice WMACCESS Internet
+VAT No. DE199378386
+Invoice No
+123100401
+Amount
+-without VAT-quantity
+130,00 € 1
+10,00 € 0
+50,00 € 0
+1.000,00 € 0
+10,00 € 0
+0,58 € 14
+0,70 € 0
+1,50 € 162
+0,50 € 0
+0,80 € 0
+1,80 € 0
+0,30 € 0
+0,30 € 0
+0,40 € 0
+0,40 € 0
+0,30 € 0
+0,30 € 0
+Terms of Payment: Immediate payment without discount. Any bank charges must be paid by the invoice recipient.
+Bank fees at our expense will be charged to the invoice recipient!
+Please credit the amount invoiced to IBAN DE29 1234 5678 9012 3456 78 | BIC GENODE51MIC (SEPA Credit Transfer)
+This invoice is generated automatically and will not be signedTransaction Fee T6 0,00 €130,00 €
+Basis fee for additional user accounts 0,00 €
+0,00 €
+0,00 €Basic Fee wmPos
+Change of user accounts
+Transaction Fee T101.02.2024 - 29.02.2024
+Transaction Fee G6 0,00 €0,00 €
+VAT 19 % 72,41 €Transaction Fee G3 0,00 €
+Transaction Fee G5 0,00 €Transaction Fee G1 0,00 €
+Transaction Fee G4Transaction Fee G2
+0,00 €Date
+1. März 2024Customer No
+12345Invoice Period
+0,00 €
+Transaction Fee T5 0,00 €243,00 €8,12 €
+Transaction Fee T2 0,00 €
+Transaction Fee T3
+Gross Amount incl. VAT 453,53 €Total 381,12 €Service Description Total Amount
+Basic Fee wmView
+Basic Fee wmGuide
+0,00 €
+Transaction Fee T4
+Request sections: T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Amount in Euro: 0,58 0,70 1,50 0,50 0,80 1,80 0,30 0,30 0,40 0,40 0,30 0,30
+user-account-1 10 0 99 0 0 0 0 0 0 0 0 0 154,30 €
+user-account-2 4 0 63 0 0 0 0 0 0 0 0 0 96,82 €
+Transaction Fee Seg T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Queries in Total: 14 0 162 0 0 0 0 0 0 0 0 0
+Total in Euro: 8,12 € 0,00 € 243,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 251,12 €Invoice Details
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+The explanation of the query fee categories (T1 to T6 and G1 to G6) can be found on our website:
+https://www.wmaccess.com/abfragekategorien
+T1: T2: T3: T4: T5: T6:
+4 0 9 0 0 0
+0 0 12 0 0 0
+0 0 4 0 0 0
+5 0 36 0 0 0
+0 0 19 0 0 0
+1 0 7 0 0 0
+2 0 6 0 0 0
+0 0 11 0 0 0
+0 0 15 0 0 0
+0 0 5 0 0 0
+1 0 23 0 0 0
+1 0 4 0 0 0
+0 0 11 0 0 0
+0,58 0,70 1,50 0,50 0,80 1,8016,50 €Kpi/22695 10,16 €GS 32090 11,08 €18,00 €
+28,50 €CRS/28432
+16,50 €WPN:24791 6,58 €Ttrb/17885 35,08 €SF-M 596/99-08 7,50 €22,50 €Invoice Details for wmView Query Reference
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+wmview, wmProfile and User Profiles Query Segments:
+56,90 €CCL/371515,82 €
+6,00 €AZR/31/27439
+Price for each Query in Euro:Query Reference:
+*Not specified*
+Wwt/15658PG 7772Cs/52113
+Rjn/11138
+
+2025-03-23 22:47:14,205 - INFO - ==================================================
+2025-03-23 22:47:14,206 - INFO - Sending request to OpenAI
+2025-03-23 22:47:16,450 - INFO - Received response from OpenAI:
+2025-03-23 22:47:16,450 - INFO - ==================================================
+2025-03-23 22:47:16,451 - INFO - 1. Extracted Company: CPB Software (Germany) GmbH
+2. Extracted Address: Im Bruch 3 - 63897 Miltenberg/Main
+3. Verification:
+   - Is it a known company? (Yes/No): Yes
+   - Does the address format look valid? (Yes/No): Yes
+2025-03-23 22:47:16,451 - INFO - ==================================================
+2025-03-23 22:47:16,451 - INFO - Analysis result for 'Valid Invoice.pdf':
+2025-03-23 22:47:16,451 - INFO - Status: real
+2025-03-23 22:47:16,451 - INFO - Green points: 0
+2025-03-23 22:47:16,451 - INFO - Red points: 0
+2025-03-23 22:47:56,978 - INFO - Extracted text from PDF 'Fake Invoice.pdf':
+2025-03-23 22:47:56,978 - INFO - ==================================================
+2025-03-23 22:47:56,978 - INFO - Invoice
+Payment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.
+Thanks for choosing DEMO - Sliced Invoices  | admin@slicedinvoices.com
+Page 1/1From:
+DEMO - Sliced Invoices
+Suite 5A-1204
+123 Somewhere Street
+Your City AZ 12345
+admin@slicedinvoices.comInvoice Number INV-3337
+Order Number 12345
+Invoice Date January 25, 2016
+Due Date January 31, 2016
+Total Due $93.50
+To:
+Test Business
+123 Somewhere St
+Melbourne, VIC 3000
+test@test.com
+Hrs/Qty Service Rate/Price Adjust Sub Total
+1.00Web Design
+This is a sample description...$85.00 0.00% $85.00
+Sub Total $85.00
+Tax $8.50
+Total $93.50
+ANZ Bank
+ACC # 1234 1234
+BSB # 4321 432Paid
+2025-03-23 22:47:56,979 - INFO - ==================================================
+2025-03-23 22:47:56,979 - INFO - Sending request to OpenAI
+2025-03-23 22:48:01,284 - INFO - Received response from OpenAI:
+2025-03-23 22:48:01,284 - INFO - ==================================================
+2025-03-23 22:48:01,284 - INFO - 1. Extracted Company: DEMO - Sliced Invoices  
+2. Extracted Address: Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345  
+3. Verification:  
+   - Is it a known company? (No)  
+   - Does the address format look valid? (Yes)  
+
+**Analysis Explanation:**  
+- The company "DEMO - Sliced Invoices" appears to be a hypothetical or placeholder name commonly used in sample invoices and documentation. Therefore, it is not a known, legitimate company.
+- The address is structured properly (including a suite number, street name, city, state abbreviation, and ZIP code), which makes it look valid even if it is not linked to a real entity.
+2025-03-23 22:48:01,285 - INFO - ==================================================
+2025-03-23 22:48:01,285 - INFO - Found 'No' answer in: - is it a known company? (no)
+2025-03-23 22:48:01,285 - INFO - Analysis result for 'Fake Invoice.pdf':
+2025-03-23 22:48:01,286 - INFO - Status: fake
+2025-03-23 22:48:01,286 - INFO - Green points: 0
+2025-03-23 22:48:01,286 - INFO - Red points: 2
+2025-03-23 22:48:07,177 - INFO - Extracted text from PDF 'Valid Invoice.pdf':
+2025-03-23 22:48:07,177 - INFO - ==================================================
+2025-03-23 22:48:07,177 - INFO - CPB Software (Germany) GmbH - Im Bruch 3 - 63897 Miltenberg/Main
+Musterkunde AG
+Mr. John Doe
+Musterstr. 23
+12345 Musterstadt Name:  Stefanie Müller
+Phone: +49 9371 9786-0
+Invoice WMACCESS Internet
+VAT No. DE199378386
+Invoice No
+123100401
+Amount
+-without VAT-quantity
+130,00 € 1
+10,00 € 0
+50,00 € 0
+1.000,00 € 0
+10,00 € 0
+0,58 € 14
+0,70 € 0
+1,50 € 162
+0,50 € 0
+0,80 € 0
+1,80 € 0
+0,30 € 0
+0,30 € 0
+0,40 € 0
+0,40 € 0
+0,30 € 0
+0,30 € 0
+Terms of Payment: Immediate payment without discount. Any bank charges must be paid by the invoice recipient.
+Bank fees at our expense will be charged to the invoice recipient!
+Please credit the amount invoiced to IBAN DE29 1234 5678 9012 3456 78 | BIC GENODE51MIC (SEPA Credit Transfer)
+This invoice is generated automatically and will not be signedTransaction Fee T6 0,00 €130,00 €
+Basis fee for additional user accounts 0,00 €
+0,00 €
+0,00 €Basic Fee wmPos
+Change of user accounts
+Transaction Fee T101.02.2024 - 29.02.2024
+Transaction Fee G6 0,00 €0,00 €
+VAT 19 % 72,41 €Transaction Fee G3 0,00 €
+Transaction Fee G5 0,00 €Transaction Fee G1 0,00 €
+Transaction Fee G4Transaction Fee G2
+0,00 €Date
+1. März 2024Customer No
+12345Invoice Period
+0,00 €
+Transaction Fee T5 0,00 €243,00 €8,12 €
+Transaction Fee T2 0,00 €
+Transaction Fee T3
+Gross Amount incl. VAT 453,53 €Total 381,12 €Service Description Total Amount
+Basic Fee wmView
+Basic Fee wmGuide
+0,00 €
+Transaction Fee T4
+Request sections: T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Amount in Euro: 0,58 0,70 1,50 0,50 0,80 1,80 0,30 0,30 0,40 0,40 0,30 0,30
+user-account-1 10 0 99 0 0 0 0 0 0 0 0 0 154,30 €
+user-account-2 4 0 63 0 0 0 0 0 0 0 0 0 96,82 €
+Transaction Fee Seg T1: T2: T3: T4: T5: T6: G1: G2: G3: G4: G5: G6:
+Queries in Total: 14 0 162 0 0 0 0 0 0 0 0 0
+Total in Euro: 8,12 € 0,00 € 243,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 0,00 € 251,12 €Invoice Details
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+The explanation of the query fee categories (T1 to T6 and G1 to G6) can be found on our website:
+https://www.wmaccess.com/abfragekategorien
+T1: T2: T3: T4: T5: T6:
+4 0 9 0 0 0
+0 0 12 0 0 0
+0 0 4 0 0 0
+5 0 36 0 0 0
+0 0 19 0 0 0
+1 0 7 0 0 0
+2 0 6 0 0 0
+0 0 11 0 0 0
+0 0 15 0 0 0
+0 0 5 0 0 0
+1 0 23 0 0 0
+1 0 4 0 0 0
+0 0 11 0 0 0
+0,58 0,70 1,50 0,50 0,80 1,8016,50 €Kpi/22695 10,16 €GS 32090 11,08 €18,00 €
+28,50 €CRS/28432
+16,50 €WPN:24791 6,58 €Ttrb/17885 35,08 €SF-M 596/99-08 7,50 €22,50 €Invoice Details for wmView Query Reference
+Period:        01.02.2024        to        29.02.2024
+Unit:        Musterkunde AG                                                            12345
+wmview, wmProfile and User Profiles Query Segments:
+56,90 €CCL/371515,82 €
+6,00 €AZR/31/27439
+Price for each Query in Euro:Query Reference:
+*Not specified*
+Wwt/15658PG 7772Cs/52113
+Rjn/11138
+
+2025-03-23 22:48:07,178 - INFO - ==================================================
+2025-03-23 22:48:07,178 - INFO - Sending request to OpenAI
+2025-03-23 22:48:11,604 - INFO - Received response from OpenAI:
+2025-03-23 22:48:11,604 - INFO - ==================================================
+2025-03-23 22:48:11,604 - INFO - 1. Extracted Company: CPB Software (Germany) GmbH
+2. Extracted Address: Im Bruch 3, 63897 Miltenberg/Main
+3. Verification:
+   - Is it a known company? (Yes) 
+   - Does the address format look valid? (Yes) 
+
+### Analysis:
+- **Company Name**: CPB Software (Germany) GmbH is recognized as a legitimate software company, known for providing technology solutions and services, especially in the area of software development.
+- **Address**: The address provided (Im Bruch 3, 63897 Miltenberg/Main) appears to follow the correct format for a German address, which includes a street name, street number, postal code, and city. It seems to be a valid location, as Miltenberg is an actual town in Germany.
+
+Thus, both the company and the address can be considered legitimate based on the provided information.
+2025-03-23 22:48:11,605 - INFO - ==================================================
+2025-03-23 22:48:11,605 - INFO - Analysis result for 'Valid Invoice.pdf':
+2025-03-23 22:48:11,605 - INFO - Status: real
+2025-03-23 22:48:11,605 - INFO - Green points: 2
+2025-03-23 22:48:11,605 - INFO - Red points: 0
